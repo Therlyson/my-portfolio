@@ -1,0 +1,11 @@
+html {
+  @apply relative h-full min-h-full w-full scroll-smooth;
+}
+
+body {
+  @apply min-h-full w-full min-w-[360px] overflow-y-auto overflow-x-hidden bg-primary bg-fixed bg-repeat text-sm font-normal text-dark scrollbar-thin scrollbar-track-background scrollbar-thumb-primary-300 max-lg:bg-background;
+}
+
+img {
+  @apply object-contain;
+}
