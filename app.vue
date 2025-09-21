@@ -74,13 +74,9 @@ defineOgImageComponent('Main', {
 
 <style lang="scss" scoped>
 .app {
-  // .app__parallax
-
   &__parallax {
     @apply max-lg:hidden;
   }
-
-  // .app__layout
 
   &__layout {
   }

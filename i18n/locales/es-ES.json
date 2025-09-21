@@ -1,0 +1,53 @@
+{
+  "navigation": {
+    "about": "Sobre Mí",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "about": {
+    "download_cv": "Descargar CV"
+  },
+  "what_i_do": {
+    "title": "Lo Que Hago"
+  },
+  "testimonials": {
+    "title": "Testimonios"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "hobbies": {
+    "title": "Aficiones"
+  },
+  "experience": {
+    "title": "Experiencia"
+  },
+  "education": {
+    "title": "Educación"
+  },
+  "portfolio": {
+    "subtitle": "Mis Trabajos",
+    "description": "Descripción",
+    "technology": "Tecnología",
+    "not_found_title": "No Se Encontraron Proyectos",
+    "not_found_caption": "Desafortunadamente, no pudimos encontrar ningún proyecto en este momento. Vuelve más tarde.",
+    "images_not_found": "No se encontraron imágenes"
+  },
+  "contact": {
+    "subtitle": "Ponerse en Contacto",
+    "form_title": "¿Cómo Puedo Ayudarte?",
+    "form_name": "Nombre Completo",
+    "form_email": "Dirección de Email",
+    "form_subject": "Asunto",
+    "form_message": "Mensaje",
+    "submit": "Enviar mensaje",
+    "success": "¡El formulario se ha enviado con éxito!"
+  },
+  "error": {
+    "subtitle": "Parece que no se encontró nada en esta ubicación.",
+    "button": "Ir al inicio"
+  },
+  "footer": {
+    "copyrights": "Todos los derechos reservados."
+  }
+}

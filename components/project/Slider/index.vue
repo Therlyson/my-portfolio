@@ -9,8 +9,6 @@ interface Props {
 
 const { title, gallery } = defineProps<Props>()
 
-const { public: publicEnv } = useRuntimeConfig()
-
 const onSwiperInit = (swiper: SwiperType) => {
   const { initDOM } = useAfterOutIn(() => {
     swiper.pagination.update()
@@ -47,7 +45,7 @@ const onSwiperInit = (swiper: SwiperType) => {
     >
       <NuxtPicture
         class="project-slider__img"
-        :src="`${publicEnv.apiBase}/${item.image}`"
+        :src="item.image"
         :alt="title"
         :title="title"
         sizes="700px lg:1100px xl:900px 2xl:1280px"

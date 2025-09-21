@@ -83,12 +83,27 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL ?? '',
-    skipSettingLocaleOnNavigate: true,
+    baseUrl:
+      process.env.NODE_ENV === 'production'
+        ? process.env.NUXT_PUBLIC_SITE_URL
+        : '',
+    strategy: 'prefix_except_default',
+    defaultLocale: 'pt',
     lazy: true,
     langDir: 'i18n/locales',
-    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
     locales: [
+      {
+        code: 'pt',
+        language: 'pt-PT',
+        file: 'pt-PT.json',
+        name: 'Português',
+        isCatchallLocale: true,
+      },
       {
         code: 'en',
         language: 'en-US',
@@ -96,16 +111,10 @@ export default defineNuxtConfig({
         name: 'English',
       },
       {
-        code: 'az',
-        language: 'az-AZ',
-        file: 'az-AZ.json',
-        name: 'Azərbaycanca',
-      },
-      {
-        code: 'ru',
-        language: 'ru-RU',
-        file: 'ru-RU.json',
-        name: 'Русский',
+        code: 'es',
+        language: 'es-ES',
+        file: 'es-ES.json',
+        name: 'Español',
       },
     ],
   },
@@ -127,9 +136,10 @@ export default defineNuxtConfig({
   },
 
   image: {
-    domains: [process.env.NUXT_IMAGE_DOMAIN ?? ''],
+    dir: 'public',
+    domains: ['cdn.jsdelivr.net'],
     alias: {
-      unsplash: `https://${process.env.NUXT_IMAGE_DOMAIN}`,
+      unsplash: `https://images.unsplash.com`,
     },
   },
 

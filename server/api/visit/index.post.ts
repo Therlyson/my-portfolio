@@ -1,14 +1,14 @@
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const query = getQuery(event)
 
-  // Log da visita (em produção, você salvaria no banco de dados)
+  // Log da visita (em produção, salvar no banco de dados)
   console.log('📊 Nova visita registrada:', {
-    ip: body.ip || '127.0.0.1',
-    referrer: body.referrer,
-    platform: body.platform,
-    user_agent: body.user_agent,
+    ip: query.ip || '127.0.0.1',
+    referrer: query.referrer,
+    platform: query.platform,
+    user_agent: query.user_agent,
     timestamp: new Date().toISOString(),
-    lang_code: getHeader(event, 'lang-code') || 'en',
+    lang_code: getHeader(event, 'lang-code') || 'pt',
   })
 
   return {

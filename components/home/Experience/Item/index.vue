@@ -6,8 +6,6 @@ interface Props {
 }
 
 const { experience } = defineProps<Props>()
-
-const { public: publicEnv } = useRuntimeConfig()
 </script>
 
 <template>
@@ -29,7 +27,7 @@ const { public: publicEnv } = useRuntimeConfig()
       </div>
       <div class="experience-item__icon">
         <NuxtPicture
-          :src="`${publicEnv.apiBase}/${experience.image}`"
+          :src="experience.image"
           :alt="experience.title"
           fit="contain"
           sizes="54px sm:40px"

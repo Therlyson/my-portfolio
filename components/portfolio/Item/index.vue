@@ -7,8 +7,6 @@ interface Props {
 
 const { project } = defineProps<Props>()
 
-const { public: publicEnv } = useRuntimeConfig()
-
 const localePath = useLocalePath()
 </script>
 
@@ -18,7 +16,7 @@ const localePath = useLocalePath()
       <div class="portfolio-item__frame">
         <NuxtPicture
           class="portfolio-item__img"
-          :src="`${publicEnv.apiBase}/${project.preview_image}`"
+          :src="project.preview_image"
           :alt="project.title"
           :title="project.title"
           sizes="sm:585px lg:480px xl:360px"

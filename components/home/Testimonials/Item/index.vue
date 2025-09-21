@@ -6,8 +6,6 @@ interface Props {
 }
 
 const { testimonial } = defineProps<Props>()
-
-const { public: publicEnv } = useRuntimeConfig()
 </script>
 
 <template>
@@ -15,7 +13,7 @@ const { public: publicEnv } = useRuntimeConfig()
     <div class="testimonial-item__wrapper">
       <div class="testimonial-item__picture">
         <NuxtPicture
-          :src="`${publicEnv.apiBase}/${testimonial.image}`"
+          :src="testimonial.image"
           :alt="testimonial.full_name"
           width="80"
           height="80"

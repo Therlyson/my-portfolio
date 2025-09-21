@@ -34,24 +34,17 @@ const handleError = () => clearError({ redirect: '/' })
 
 <style lang="scss" scoped>
 .error-page {
-  // .error-page__wrapper
-
   &__wrapper {
     @apply mb-32 mt-20 flex flex-col items-center justify-center;
   }
-  // .error-page__title
 
   &__title {
     @apply mb-2 text-[10rem] leading-snug text-dark-300;
   }
 
-  // .error-page__subtitle
-
   &__subtitle {
     @apply mb-4 text-base;
   }
-
-  // .error-page__button
 
   &__button {
   }

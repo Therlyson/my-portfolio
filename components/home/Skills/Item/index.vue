@@ -5,8 +5,6 @@ interface Props {
 }
 const { skill } = defineProps<Props>()
 
-const { public: publicEnv } = useRuntimeConfig()
-
 const isMobile = useMediaQuery('not all and (min-width: 1024px)')
 </script>
 
@@ -23,7 +21,7 @@ const isMobile = useMediaQuery('not all and (min-width: 1024px)')
           class="skill-item__image"
         >
           <NuxtImg
-            :src="`${publicEnv.apiBase}/${skill.logo}`"
+            :src="skill.logo"
             :alt="skill.name"
             fit="contain"
             format="webp"

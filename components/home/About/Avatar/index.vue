@@ -5,14 +5,12 @@ interface Props {
 
 const { avatar } = defineProps<Props>()
 
-const { public: publicEnv } = useRuntimeConfig()
-
 const { parallaxStyle } = useParallaxBackground()
 
 const img = useImage()
 const backgroundImageStyles = computed(() => {
   const imgUrl = img(
-    `${publicEnv.apiBase}/${avatar}`,
+    avatar || '/images/main_photo.jpg',
     {
       width: 600,
       height: 600,
