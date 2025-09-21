@@ -7,8 +7,6 @@ interface Props {
 
 const { info } = defineProps<Props>()
 
-const { public: publicEnv } = useRuntimeConfig()
-
 const localePath = useLocalePath()
 </script>
 
@@ -37,9 +35,8 @@ const localePath = useLocalePath()
       </p>
       <div class="about-info__buttons">
         <SiteButton
-          :to="`${publicEnv.apiBase}/${info.cv}`"
+          :to="info.cv"
           target="_blank"
-          :download="info.cv"
           class="about-info__button"
           intent="primary"
         >
@@ -58,37 +55,25 @@ const localePath = useLocalePath()
 
 <style scoped lang="scss">
 .about-info {
-  // .about-info__wrapper
-
   &__wrapper {
     @apply flex flex-col max-lg:items-center max-lg:text-center;
   }
-
-  // .about-info__position
 
   &__position {
     @apply mb-0.5 max-w-full text-base font-light text-dark-300 max-lg:mb-1.5;
   }
 
-  // .about-info__title
-
   &__title {
     @apply mb-5;
   }
-
-  // .about-info__text
 
   &__text {
     @apply mb-8 max-lg:mb-6;
   }
 
-  // .about-info__buttons
-
   &__buttons {
     @apply flex items-center gap-2;
   }
-
-  // .about-info__button
 
   &__button {
   }

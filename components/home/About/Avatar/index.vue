@@ -42,13 +42,9 @@ const backgroundImageStyles = computed(() => {
 
 <style scoped lang="scss">
 .about-avatar {
-  // .about-avatar__wrapper
-
   &__wrapper {
     @apply relative aspect-square h-full overflow-hidden rounded-full border-[1.125rem] border-solid border-background shadow-avatar;
   }
-
-  // .about-avatar__image
 
   &__image {
     @apply absolute -bottom-5 -left-5 -right-5 -top-5 h-auto w-auto bg-cover bg-no-repeat transition-all duration-0;
