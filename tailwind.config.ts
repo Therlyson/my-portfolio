@@ -4,18 +4,19 @@ import tailwindScrollbar from 'tailwind-scrollbar'
 
 const MyTheme = {
   colors: {
-    neonCarrot: {
-      DEFAULT: '#ff9638',
-      '50': '#fff7ed',
-      '100': '#ffeed4',
-      '200': '#ffd9a8',
-      '300': '#ffbd71',
-      '400': '#ff9638',
-      '500': '#fe7711',
-      '600': '#ef5c07',
-      '700': '#c64308',
-      '800': '#9d360f',
-      '900': '#7e2e10',
+    blueStone: {
+      DEFAULT: '#097c79',
+      '50': '#effefb',
+      '100': '#c9fef6',
+      '200': '#94fbed',
+      '300': '#56f2e2',
+      '400': '#23ded0',
+      '500': '#0bc1b7',
+      '600': '#059c96',
+      '700': '#097c79',
+      '800': '#0d6665',
+      '900': '#105150',
+      '950': '#022f31',
     },
     gray: {
       DEFAULT: '#666666',
@@ -39,9 +40,9 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        primary: MyTheme.colors.neonCarrot,
+        primary: MyTheme.colors.blueStone,
         dark: MyTheme.colors.gray,
-        background: '#ffffff',
+        background: '#effefb',
       },
       fontFamily: {
         sans: ['Raleway', ...defaultTheme.fontFamily.sans],
