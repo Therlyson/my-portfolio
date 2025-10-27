@@ -161,18 +161,25 @@ export const hobbies = [
 
 export const testimonials = [
   {
-    image: '/images/main_photo.jpg',
-    full_name: 'Maria Silva',
+    image: '/images/Fabio.png',
+    full_name: 'Fabio Jose',
     about:
-      'Trabalhar com o Therlyson foi uma experiência excepcional. Sua dedicação e conhecimento técnico superaram todas as expectativas.',
-    profession: 'CEO - Tech Company',
+      'Tive o prazer de coordenar o Therlyson em seus primeiros passos na STED. Hoje trabalhamos lado a lado, onde crio os designs e fluxos dos sistemas no Figma e ele transforma tudo em realidade com código limpo e eficiente. Sua capacidade de entender requisitos e implementar soluções complexas é impressionante.',
+    profession: 'Designer & Ex-Coordenador - DTED/UFMA',
   },
   {
-    image: '/images/main_photo.jpg',
-    full_name: 'João Santos',
+    image: '/images/Erik.png',
+    full_name: 'Erik Pires',
     about:
-      'Profissional extremamente competente e proativo. Entregou o projeto antes do prazo e com qualidade impecável.',
-    profession: 'Product Manager - StartUp',
+      'Como desenvolvedor sênior, tenho trabalhado com o Therlyson no novo sistema de TCC e é notável sua evolução técnica. Ele demonstra excelente domínio tanto no front-end quanto no back-end, sempre receptivo a feedbacks e contribuindo com soluções criativas. Um profissional que alia conhecimento técnico com ótima capacidade de trabalho em equipe.',
+    profession: 'Desenvolvedor Sênior - DTED/UFMA',
+  },
+  {
+    image: '/images/Felipe.png',
+    full_name: 'Felipe Timoteo',
+    about:
+      'Tive a oportunidade de integrar o Therlyson à equipe quando ele chegou na STED, acompanhando seu desenvolvimento no sistema de diárias e passagens. Sua capacidade de aprendizado rápido e autonomia para resolver problemas complexos me impressionaram desde o início. Hoje, trabalhamos juntos no sistema de TCC e sua contribuição tem sido fundamental para o projeto.',
+    profession: 'Desenvolvedor Sênior - DTED/UFMA',
   },
 ]
 
@@ -182,6 +189,11 @@ export const socialLinks = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/therlyson-ryan/',
     icon: 'mdi:linkedin',
+  },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/theeryan',
+    icon: 'mdi:instagram',
   },
 ]
 
@@ -193,7 +205,7 @@ export const projects = [
     technologies: [
       {
         name: 'Laravel',
-        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
       },
       {
         name: 'Vue.js',

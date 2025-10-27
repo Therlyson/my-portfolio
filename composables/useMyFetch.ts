@@ -11,7 +11,7 @@ export const useMyFetch = <T>(
 
   const language = useCookie('language')
   const langCode = ref<string>(
-    import.meta.server ? locale.value : (language.value ?? 'en'),
+    import.meta.server ? locale.value : (language.value ?? locale.value),
   )
 
   const defaults: UseFetchOptions<T> = {
