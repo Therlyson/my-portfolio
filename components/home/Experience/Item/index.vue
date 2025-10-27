@@ -29,8 +29,8 @@ const { experience } = defineProps<Props>()
         <NuxtPicture
           :src="experience.image"
           :alt="experience.title"
-          fit="contain"
-          sizes="54px sm:40px"
+          fit="cover"
+          sizes="80px sm:80px"
         />
       </div>
     </div>
@@ -67,11 +67,15 @@ const { experience } = defineProps<Props>()
   // .experience-item__icon
 
   &__icon {
-    @apply relative z-0 flex h-20 w-full items-center justify-center rounded-t-xl bg-primary-400 p-3 sm:ml-16 sm:mr-10 sm:aspect-square sm:w-20 sm:rounded-full sm:p-5;
+    @apply relative z-0 flex w-full items-center justify-center overflow-hidden rounded-t-xl bg-primary-400 sm:ml-16 sm:mr-10 sm:aspect-square sm:w-20 sm:rounded-full;
     @apply sm:before:absolute sm:before:left-1/2 sm:before:top-full sm:before:h-screen sm:before:w-0.5 sm:before:-translate-x-1/2 sm:before:bg-primary;
     @apply sm:after:absolute sm:after:right-full sm:after:top-1/2 sm:after:h-0.5 sm:after:w-full sm:after:-translate-y-1/2 sm:after:bg-primary;
+    img,
+    picture {
+      @apply h-full w-full;
+    }
     img {
-      @apply h-full;
+      @apply object-cover object-center;
     }
   }
 

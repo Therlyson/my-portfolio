@@ -1,7 +1,6 @@
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
 
-  // Validação básica
   if (!body.name || !body.email || !body.subject || !body.message) {
     throw createError({
       statusCode: 400,
@@ -9,7 +8,6 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  // Validação de email básica
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   if (!emailRegex.test(body.email)) {
     throw createError({
