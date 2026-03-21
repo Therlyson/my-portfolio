@@ -41,7 +41,8 @@
     "form_subject": "Subject",
     "form_message": "Message",
     "submit": "Send message",
-    "success": "The form has been successfully submitted!"
+    "success": "The form has been successfully submitted!",
+    "error": "We couldn't send your message. Please try again in a moment."
   },
   "error": {
     "subtitle": "It looks like nothing was found at this location. ",

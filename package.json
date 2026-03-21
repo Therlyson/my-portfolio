@@ -43,6 +43,7 @@
     "@vueuse/nuxt": "^11.1.0",
     "class-variance-authority": "^0.7.1",
     "floating-vue": "^5.2.2",
+    "nodemailer": "^8.0.3",
     "nuxt-swiper": "^1.2.2"
   }
 }

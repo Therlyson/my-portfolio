@@ -40,6 +40,8 @@ const { data: experiences } = await useMyFetch<Experience[]>(
   // .experience__body
 
   &__body {
+    @apply relative;
+    @apply sm:before:absolute sm:before:left-1/2 sm:before:top-0 sm:before:h-full sm:before:w-0.5 sm:before:-translate-x-1/2 sm:before:bg-primary sm:before:opacity-50;
   }
 
   // .experience__item

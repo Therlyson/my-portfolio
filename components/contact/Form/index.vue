@@ -1,18 +1,49 @@
 <script setup lang="ts">
 import type { PluginConfigs } from '@formkit/vue'
-import type { FormKitNode } from '@formkit/core'
 import { reset } from '@formkit/core'
 import { ApiEndpoints } from '@/utils/apiEndpoints'
 
 const submitted = ref(false)
+const submitError = ref(false)
 
-const submitHandler = async (data: FormKitNode) => {
-  const { status } = await useMyFetch(ApiEndpoints.GET_IN_TOUCH, {
-    method: 'post',
-    params: data,
-  })
-  reset('contactForm')
-  submitted.value = status.value === 'success'
+interface ContactFormPayload {
+  full_name: string
+  email: string
+  subject: string
+  text: string
+}
+
+const { public: publicEnv } = useRuntimeConfig()
+const language = useCookie('language')
+
+const submitHandler = async (data: ContactFormPayload) => {
+  try {
+    await $fetch(ApiEndpoints.GET_IN_TOUCH, {
+      baseURL: publicEnv.apiBase,
+      method: 'POST',
+      headers: {
+        'lang-code': language.value ?? locale.value,
+      },
+      body: {
+        name: data.full_name,
+        email: data.email,
+        subject: data.subject,
+        message: data.text,
+      },
+    })
+
+    reset('contactForm')
+    submitted.value = true
+    submitError.value = false
+  } catch {
+    submitted.value = false
+    submitError.value = true
+  }
+}
+
+const handleFormInput = () => {
+  submitted.value = false
+  submitError.value = false
 }
 
 const config = inject<PluginConfigs>(Symbol.for('FormKitConfig'))
@@ -39,7 +70,7 @@ watch(
       type="form"
       :actions="false"
       @submit="submitHandler"
-      @input="submitted = false"
+      @input="handleFormInput"
     >
       <div class="contact-form__wrapper">
         <SiteTitle class="contact-form__title">{{
@@ -97,6 +128,12 @@ watch(
     <div v-if="submitted" class="contact-form__alert">
       {{ $t('contact.success') }}
     </div>
+    <div
+      v-if="submitError"
+      class="contact-form__alert contact-form__alert--error"
+    >
+      {{ $t('contact.error') }}
+    </div>
   </div>
 </template>
 
@@ -152,6 +189,10 @@ watch(
 
   &__alert {
     @apply mt-2 text-green-500;
+  }
+
+  &__alert--error {
+    @apply text-red-500;
   }
 }
 </style>

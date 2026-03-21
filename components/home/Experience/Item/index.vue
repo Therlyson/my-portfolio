@@ -39,7 +39,7 @@ const { experience } = defineProps<Props>()
 
 <style lang="scss" scoped>
 .experience-item {
-  @apply relative overflow-hidden pb-10 last:pb-0;
+  @apply relative overflow-visible pb-10 last:pb-0;
   @apply max-sm:before:absolute max-sm:before:left-1/2 max-sm:before:top-0 max-sm:before:h-full max-sm:before:w-0.5 max-sm:before:-translate-x-1/2 max-sm:before:bg-primary;
   &:nth-child(even) {
     .experience-item__wrapper {
@@ -53,11 +53,6 @@ const { experience } = defineProps<Props>()
       @apply sm:after:left-full sm:after:right-auto;
     }
   }
-  &:last-child {
-    .experience-item__icon {
-      @apply before:hidden;
-    }
-  }
   // .experience-item__wrapper
 
   &__wrapper {
@@ -67,9 +62,9 @@ const { experience } = defineProps<Props>()
   // .experience-item__icon
 
   &__icon {
-    @apply relative z-0 flex w-full items-center justify-center overflow-hidden rounded-t-xl bg-primary-400 sm:ml-16 sm:mr-10 sm:aspect-square sm:w-20 sm:rounded-full;
-    @apply sm:before:absolute sm:before:left-1/2 sm:before:top-full sm:before:h-screen sm:before:w-0.5 sm:before:-translate-x-1/2 sm:before:bg-primary;
-    @apply sm:after:absolute sm:after:right-full sm:after:top-1/2 sm:after:h-0.5 sm:after:w-full sm:after:-translate-y-1/2 sm:after:bg-primary;
+    @apply relative z-20 flex w-full items-center justify-center overflow-hidden rounded-t-xl bg-primary-400 sm:ml-16 sm:mr-10 sm:aspect-square sm:w-20 sm:rounded-full;
+    @apply sm:ring-2 sm:ring-primary-200 sm:ring-offset-2 sm:ring-offset-background;
+    @apply sm:after:absolute sm:after:right-full sm:after:top-1/2 sm:after:h-0.5 sm:after:w-10 sm:after:-translate-y-1/2 sm:after:bg-primary sm:after:opacity-70;
     img,
     picture {
       @apply h-full w-full;

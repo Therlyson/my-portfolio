@@ -15,20 +15,18 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'apple-touch-icon',
-          sizes: '180x180',
-          href: '/apple-touch-icon.png',
+          type: 'image/svg+xml',
+          href: '/favicon.svg?v=2',
         },
         {
           rel: 'icon',
-          type: 'image/png',
-          sizes: '32x32',
-          href: '/favicon-32x32.png',
+          type: 'image/svg+xml',
+          href: '/favicon.svg?v=2',
         },
         {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '16x16',
-          href: '/favicon-16x16.png',
+          rel: 'shortcut icon',
+          type: 'image/svg+xml',
+          href: '/favicon.svg?v=2',
         },
         {
           rel: 'manifest',
@@ -124,6 +122,12 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    smtpHost: process.env.SMTP_HOST ?? '',
+    smtpPort: process.env.SMTP_PORT ?? '',
+    smtpUser: process.env.SMTP_USER ?? '',
+    smtpPass: process.env.SMTP_PASS ?? '',
+    smtpFrom: process.env.SMTP_FROM ?? '',
+    contactToEmail: process.env.CONTACT_TO_EMAIL ?? '',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL ?? '',
       siteName: process.env.NUXT_PUBLIC_SITE_NAME ?? '',

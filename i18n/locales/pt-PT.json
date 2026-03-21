@@ -41,7 +41,8 @@
     "form_subject": "Assunto",
     "form_message": "Mensagem",
     "submit": "Enviar mensagem",
-    "success": "O formulário foi enviado com sucesso!"
+    "success": "O formulário foi enviado com sucesso!",
+    "error": "Não foi possível enviar sua mensagem. Tente novamente em instantes."
   },
   "error": {
     "subtitle": "Parece que nada foi encontrado neste local.",
