@@ -34,10 +34,10 @@
     "images_not_found": "No se encontraron imágenes"
   },
   "contact": {
-    "subtitle": "Ponerse en Contacto",
-    "form_title": "¿Cómo Puedo Ayudarte?",
+    "subtitle": "Ponte en contacto",
+    "form_title": "¿Cómo puedo ayudarte?",
     "form_name": "Nombre Completo",
-    "form_email": "Dirección de Email",
+    "form_email": "Correo electrónico",
     "form_subject": "Asunto",
     "form_message": "Mensaje",
     "submit": "Enviar mensaje",

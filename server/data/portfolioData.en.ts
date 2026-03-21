@@ -2,12 +2,12 @@ export const userData = {
   avatar: '/images/my_photo.png',
   full_name: 'Therlyson Ryan',
   about:
-    'I am a full-stack developer specialized in Laravel, Vue.js, Docker, and Java with Spring Boot, with experience in educational systems, financial management, data, and RESTful APIs. Computer Science student with practical experience at DTED/UFMA and scholarship holder at Pulse (Grupo Mateus). I specialize in web development, back-end, and databases, applying my technical expertise to contribute to scalable and innovative solutions',
+    'Data Engineer and Software Developer, Computer Science student, with hands-on experience building data pipelines on AWS (S3, Lambda, Glue, and Athena), infrastructure as code with Terraform, orchestration with Airflow/Airbyte, and transformations with dbt. I also work across back-end (Laravel and Spring Boot) and front-end (Vue.js and React), focused on scalable and data-driven solutions.',
   profession: [
+    'Data Engineer',
+    'Software Developer',
     'Full Stack Developer',
-    'Back-end Developer',
     'Computer Scientist',
-    'Researcher',
   ],
   phone_number: '+55 (98) 98428-2952',
   email: 'therlyson2017@gmail.com',
@@ -17,23 +17,64 @@ export const userData = {
 
 export const whatIDo = [
   {
+    icon: 'mdi:database-cog',
+    title: 'Data Engineering',
+    text: 'I build end-to-end data pipelines with Python, Airflow, Airbyte, and dbt, covering ingestion, transformation, data quality, and delivery for analytics use cases. I work with S3 data lakes, Glue/Athena catalog and query layers, medallion architecture, and Terraform-based infrastructure for reproducible environments.',
+  },
+  {
     icon: 'mdi:code-braces',
     title: 'Full Stack Web Development',
-    text: 'Creating complete web solutions, from modern and responsive interfaces with Vue.js and React to robust and secure APIs with Laravel, Spring Boot, and NestJs.',
+    text: 'I build complete web solutions from front-end to back-end, with a strong focus on usability, performance, and long-term maintainability. I develop reactive interfaces with Vue.js and React and robust APIs with Laravel and Spring Boot, combining authentication, business logic, and clean architecture practices.',
   },
   {
     icon: 'mdi:server',
     title: 'Back-end Development',
-    text: 'Specialized in developing RESTful APIs, database modeling, and implementing complex business rules.',
+    text: 'I design and implement REST APIs with a focus on security, clear contracts, and scalability. I have hands-on experience in relational modeling, normalization, and query optimization in MySQL/PostgreSQL, plus business validation layers, Sanctum authentication, and service integrations.',
   },
   {
     icon: 'mdi:brain',
     title: 'Artificial Intelligence',
-    text: 'Experience in research and development of solutions with Machine Learning and Deep Learning, including image classification and segmentation.',
+    text: 'I work with applied AI in both research and product contexts, combining ML/DL fundamentals with engineering practices. I have built image classification, segmentation, and detection solutions (CNN, UNET, YOLO), and also generative AI applications with RAG, vector search, and LLM integrations.',
   },
 ]
 
 export const technologies = [
+  {
+    name: 'AWS',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+  },
+  {
+    name: 'Terraform',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg',
+  },
+  {
+    name: 'Apache Airflow',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg',
+  },
+  {
+    name: 'Airbyte',
+    logo: 'https://cdn.simpleicons.org/airbyte',
+  },
+  {
+    name: 'Docker',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+  },
+  {
+    name: 'Laravel',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
+  },
+  {
+    name: 'PHP',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+  },
+  {
+    name: 'dbt',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/dbt.svg',
+  },
+  {
+    name: 'Python',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+  },
   {
     name: 'Java',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
@@ -43,20 +84,12 @@ export const technologies = [
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
   },
   {
-    name: 'PHP',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
-  },
-  {
-    name: 'Laravel',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg',
+    name: 'TypeScript',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
   },
   {
     name: 'JavaScript',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-  },
-  {
-    name: 'TypeScript',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
   },
   {
     name: 'Vue.js',
@@ -65,22 +98,6 @@ export const technologies = [
   {
     name: 'React',
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-  },
-  {
-    name: 'NestJS',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg',
-  },
-  {
-    name: 'Python',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-  },
-  {
-    name: 'HTML5',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-  },
-  {
-    name: 'CSS3',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   },
   {
     name: 'PostgreSQL',
@@ -99,17 +116,28 @@ export const technologies = [
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
   },
   {
-    name: 'Docker',
-    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+    name: 'HTML5',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+  },
+  {
+    name: 'CSS3',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   },
 ]
 
 export const experiences = [
   {
-    period: 'January 2025 - Present',
-    title: 'Full Stack Developer',
-    sub_title: 'DTED - UFMA',
-    text: 'Working on the Education Technology Directorate team building and evolving web applications focused on front-end, back-end, and integrations. Lead developer of the Per Diem and Travel System (financial management for EAD faculty/tutors) and the new TCC System with LaTeX workflow. Development with Laravel, Vue.js, and MySQL, including data modeling, REST APIs, business validations, and Dockerization. Implementation of authentication with Laravel Sanctum and work organization in Kanban.',
+    period: 'December 2025 - Present',
+    title: 'Data Engineer Intern',
+    sub_title: 'Cognitivo AI',
+    text: 'Working in data engineering building modern pipelines and AWS automations. Development of ingestion flows on S3, cataloging with Glue Crawler, querying in Athena, and ELT/ETL orchestration with Airbyte and Airflow. Participation in an internal transcription pipeline for LLM workflows and initiatives with medallion architecture, Terraform, and real-time dashboard integrations.',
+    image: '/images/cognitivo_ai_logo.jpg',
+  },
+  {
+    period: 'January 2025 - December 2025',
+    title: 'Full Stack Development Intern',
+    sub_title: 'Education Technology Directorate (DTED) - UFMA',
+    text: 'Full stack development (Laravel, Vue.js, MySQL, and Docker) evolving web applications for UFMA EAD. Developer on the new TCC System, implementing Laravel Sanctum authentication, database modeling, and access rules for academic workflows. Lead developer of the Per Diem and Travel System, focused on REST APIs, business validations, and query optimization for real-time reporting.',
     image: '/images/sted.jpeg',
   },
   {
@@ -120,7 +148,7 @@ export const experiences = [
     image: '/images/pulse2.jpeg',
   },
   {
-    period: '2023 - January 2024',
+    period: 'August 2023 - January 2024',
     title: 'Scientific Researcher (AI)',
     sub_title: 'VipLab - UFMA',
     text: 'Research in Machine Learning and Deep Learning focused on image processing. Development of classification algorithms with convolutional neural networks, segmentation using UNET, and object detection with YOLO. Study of hyperparameter optimization with genetic algorithms and BRKGA. Use of TensorFlow, Keras, and Python for solution implementation.',
@@ -153,7 +181,7 @@ export const hobbies = [
   { icon: 'mdi:soccer', title: 'Soccer' },
   { icon: 'mdi:run', title: 'Running' },
   { icon: 'mdi:dumbbell', title: 'Gym' },
-  { icon: 'mdi:gamepad-variant', title: 'Games' },
+  { icon: 'mdi:church', title: 'Church' },
   { icon: 'mdi:music', title: 'Music' },
   { icon: 'mdi:television-play', title: 'Anime' },
   { icon: 'mdi:book-open', title: 'Reading' },
@@ -164,22 +192,22 @@ export const testimonials = [
     image: '/images/Fabio.png',
     full_name: 'Fabio Jose',
     about:
-      'I had the pleasure of coordinating Therlyson in his first steps at STED. Today we work side by side, where I create the designs and system flows in Figma and he transforms everything into reality with clean and efficient code. His ability to understand requirements and implement complex solutions is impressive.',
-    profession: 'Designer & Former Coordinator - DTED/UFMA',
+      'Working with Therlyson has always been smooth and productive. He quickly understands the core problem, proposes practical solutions, and delivers with attention to detail. On a daily basis, he communicates very well with product and design, which makes turning ideas into real features much easier.',
+    profession: 'Product Designer',
   },
   {
     image: '/images/Erik.png',
     full_name: 'Erik Pires',
     about:
-      'As a senior developer, I have been working with Therlyson on the new TCC system and his technical evolution is remarkable. He demonstrates excellent mastery in both front-end and back-end, always receptive to feedback and contributing creative solutions. A professional who combines technical knowledge with great teamwork ability.',
-    profession: 'Senior Developer - DTED/UFMA',
+      'Therlyson’s technical growth is very clear. He has a strong back-end foundation and also performs really well on the front-end, with solid organization and good prioritization. He receives feedback with maturity, improves fast, and consistently helps the team level up.',
+    profession: 'Senior Developer',
   },
   {
     image: '/images/Felipe.png',
     full_name: 'Felipe Timoteo',
     about:
-      'I had the opportunity to integrate Therlyson into the team when he arrived at STED, following his development in the per diem and travel system. His fast learning ability and autonomy to solve complex problems impressed me from the start. Today, we work together on the TCC system and his contribution has been fundamental to the project.',
-    profession: 'Senior Developer - DTED/UFMA',
+      'Since the first projects, Therlyson has shown strong ownership and reliability. He learns fast, investigates deeply before making decisions, and does not avoid technical challenges. He is also highly collaborative, the kind of teammate you trust to deliver quality work.',
+    profession: 'Back-end Developer',
   },
 ]
 
@@ -224,40 +252,94 @@ export const projects = [
     gallery: [{ image: '/images/main_bg.png' }],
   },
   {
-    slug: 'dieta-ai',
-    title: 'Dieta.AI',
-    preview_image: '/images/hp_bg.jpg',
-    technologies: [{ name: 'AI', logo: 'mdi:brain' }],
-    tag: ['Mobile', 'AI', 'Health'],
+    slug: 'docmatch-ufma',
+    title: 'DocMatch',
+    preview_image: '/images/main_bg.png',
+    technologies: [
+      {
+        name: 'NestJS',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg',
+      },
+      {
+        name: 'TypeScript',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      },
+      {
+        name: 'React',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      },
+      {
+        name: 'PostgreSQL',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+      },
+      {
+        name: 'Docker',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+      },
+    ],
+    tag: ['Web', 'Full Stack', 'University'],
     site_url: '#',
-    created_date: '2024-01-01',
+    created_date: '2025-01-01',
     description:
-      'Mobile application that uses artificial intelligence to generate personalized diets based on user data, with meal and supplement suggestions.',
+      'Complementary hours management system for UFMA, with business-rule automation based on COCOM standards and report generation.',
+    gallery: [{ image: '/images/main_bg.png' }],
+  },
+  {
+    slug: 'harry-potter-rag-agent',
+    title: 'Harry Potter RAG Agent',
+    preview_image: '/images/hp_bg.jpg',
+    technologies: [
+      {
+        name: 'FastAPI',
+        logo: 'https://cdn.simpleicons.org/fastapi',
+      },
+      {
+        name: 'LangGraph',
+        logo: 'https://cdn.simpleicons.org/langchain',
+      },
+      {
+        name: 'AWS Bedrock',
+        logo: 'https://cdn.simpleicons.org/amazonaws',
+      },
+      {
+        name: 'PGVector',
+        logo: 'https://cdn.simpleicons.org/postgresql',
+      },
+    ],
+    tag: ['AI', 'RAG', 'Back-end'],
+    site_url: '#',
+    created_date: '2025-01-01',
+    description:
+      'Conversational agent using Retrieval-Augmented Generation with FastAPI, LangGraph, AWS Bedrock, PGVector, and Langfuse, featuring vector semantic search and multi-turn memory.',
     gallery: [{ image: '/images/hp_bg.jpg' }],
   },
   {
-    slug: 'vollmed-api',
-    title: 'VollMed API',
+    slug: 'data-pipeline-orchestration',
+    title: 'Data Pipeline with Orchestration',
     preview_image: '/images/main_photo.jpg',
     technologies: [
       {
-        name: 'Spring Boot',
-        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
+        name: 'Airflow',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg',
       },
       {
-        name: 'Java',
-        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+        name: 'Airbyte',
+        logo: 'https://cdn.simpleicons.org/airbyte',
       },
       {
-        name: 'MySQL',
-        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+        name: 'Terraform',
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg',
+      },
+      {
+        name: 'AWS',
+        logo: 'https://cdn.simpleicons.org/amazonaws',
       },
     ],
-    tag: ['API', 'Back-end', 'Health'],
+    tag: ['Data Engineering', 'Cloud', 'AWS'],
     site_url: '#',
-    created_date: '2024-01-01',
+    created_date: '2025-01-01',
     description:
-      'RESTful API for medical clinic management, allowing CRUD operations for doctors and patients, as well as appointment scheduling and cancellation.',
+      'End-to-end data engineering pipeline with Airflow, Airbyte, Terraform, and AWS (S3, Glue Crawler, and Athena), with IaC provisioning and PostgreSQL ingestion into an S3 data lake.',
     gallery: [{ image: '/images/main_photo.jpg' }],
   },
   {
@@ -281,7 +363,7 @@ export const projects = [
 
 export const seoInfo = {
   meta_description:
-    'Portfolio of Therlyson Ryan, Full Stack Developer specialized in Laravel, Vue.js, and Spring Boot. Check out my projects and get in touch.',
+    'Portfolio of Therlyson Ryan, Data Engineer and Software Developer focused on AWS, Airflow, Terraform, Laravel, and Spring Boot.',
   meta_keywords:
-    'full stack developer, back-end, laravel, vue.js, spring boot, java, php, typescript, python, programmer, são luís',
+    'data engineer, data engineering, aws, airflow, airbyte, dbt, terraform, laravel, vue.js, spring boot, full stack developer, são luís',
 }
