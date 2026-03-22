@@ -5,16 +5,16 @@ FROM node:${NODE_VERSION}-slim as builder
 WORKDIR /app
 
 # Copy dependency files first to leverage Docker cache
-COPY package.json yarn.lock ./
+COPY package.json package-lock.json ./
 
 # Install dependencies
-RUN yarn install --frozen-lockfile
+RUN npm ci
 
 # Copy the rest of the application source code
 COPY . .
 
 # Build the Nuxt application
-RUN yarn build
+RUN npm run build
 
 # Stage 2: Create a minimal production image
 FROM node:${NODE_VERSION}-slim as production
