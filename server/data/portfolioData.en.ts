@@ -158,22 +158,22 @@ export const experiences = [
 
 export const education = [
   {
+    period: 'February 2026 - February 2029',
+    title: 'AWS Certified Cloud Practitioner',
+    sub_title: 'Amazon Web Services Training and Certification',
+    text: 'Certification validating fluency and fundamental understanding of AWS Cloud services. Demonstrates the ability to identify essential AWS services required to set up cloud-focused projects, alongside knowledge of security, architecture, and billing.',
+  },
+  {
     period: '2022 - 2026 (expected)',
     title: 'Bachelor in Computer Science',
     sub_title: 'Federal University of Maranhão (UFMA)',
     text: 'Academic training with solid theoretical and practical foundation in software development, software engineering, systems architecture, and artificial intelligence. In-depth study of algorithms and data structures, object-oriented programming, databases, computer networks, and operating systems. Active participation in scientific research projects, academic monitoring, and development of real applications for the university, consolidating knowledge through professional practice.',
   },
   {
-    period: 'March 2025 - August 2025',
+    period: 'October 2024 - August 2025',
     title: 'Data Structures II Monitor',
     sub_title: 'Federal University of Maranhão (UFMA)',
-    text: 'Monitoring project focused on supporting learning of complex algorithms, balanced trees, and graphs. Weekly meetings, practical exercise resolution, study groups, and didactic material development. Acting as a knowledge mediator, encouraging learning construction through practical activities and problem-solving.',
-  },
-  {
-    period: 'October 2024 - February 2025',
-    title: 'Data Structures II Monitor',
-    sub_title: 'Federal University of Maranhão (UFMA)',
-    text: 'First period as course monitor, assisting students in learning algorithm complexity, sorting and search algorithms. Preparation of didactic material, theoretical reviews, exam simulations, and group discussion sessions to promote knowledge exchange among students.',
+    text: 'Acted as a teaching assistant for two consecutive semesters. Developed didactic materials, led weekly meetings, and hosted study groups focusing on algorithm complexity, balanced trees, and graphs. Mediated knowledge transfer, encouraging practical learning and problem-solving among students.',
   },
 ]
 

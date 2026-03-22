@@ -158,22 +158,22 @@ export const experiences = [
 
 export const education = [
   {
+    period: 'Febrero 2026 - Febrero 2029',
+    title: 'AWS Certified Cloud Practitioner',
+    sub_title: 'Amazon Web Services Training and Certification',
+    text: 'Certificación que valida la fluidez y el conocimiento fundamental de los servicios de AWS Cloud. Demuestra la capacidad de identificar servicios esenciales de AWS necesarios para estructurar proyectos en la nube, junto con conocimientos sobre seguridad, arquitectura y costos.',
+  },
+  {
     period: '2022 - 2026 (previsto)',
     title: 'Licenciatura en Ciencias de la Computación',
     sub_title: 'Universidad Federal de Maranhão (UFMA)',
     text: 'Formación académica con sólida base teórica y práctica en desarrollo de software, ingeniería de software, arquitectura de sistemas e inteligencia artificial. Estudio profundo de algoritmos y estructuras de datos, programación orientada a objetos, bases de datos, redes de computadoras y sistemas operativos. Participación activa en proyectos de investigación científica, monitoría académica y desarrollo de aplicaciones reales para la universidad, consolidando conocimientos a través de la práctica profesional.',
   },
   {
-    period: 'Marzo 2025 - Agosto 2025',
+    period: 'Octubre 2024 - Agosto 2025',
     title: 'Monitor de Estructura de Datos II',
     sub_title: 'Universidad Federal de Maranhão (UFMA)',
-    text: 'Proyecto de monitoría enfocado en apoyar el aprendizaje de algoritmos complejos, árboles balanceados y grafos. Realización de encuentros semanales, resolución de ejercicios prácticos, grupos de estudio y desarrollo de material didáctico. Actuando como mediador del conocimiento, incentivando la construcción del aprendizaje a través de actividades prácticas y resolución de problemas.',
-  },
-  {
-    period: 'Octubre 2024 - Febrero 2025',
-    title: 'Monitor de Estructura de Datos II',
-    sub_title: 'Universidad Federal de Maranhão (UFMA)',
-    text: 'Primer período como monitor de la asignatura, asistiendo a estudiantes en el proceso de aprendizaje de complejidad de algoritmos, algoritmos de ordenación y búsqueda. Preparación de material didáctico, revisiones teóricas, simulaciones de exámenes y sesiones de discusión en grupo para promover el intercambio de conocimientos entre los estudiantes.',
+    text: 'Actuación durante dos semestres consecutivos como asistente de la asignatura. Preparación de material didáctico, reuniones semanales y grupos de estudio enfocados en la complejidad de algoritmos, árboles balanceados y grafos. Desempeño como mediador del conocimiento, fomentando el aprendizaje práctico y la resolución de problemas entre los estudiantes.',
   },
 ]
 
