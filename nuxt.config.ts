@@ -81,6 +81,9 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
     baseUrl:
       process.env.NODE_ENV === 'production'
         ? process.env.NUXT_PUBLIC_SITE_URL
@@ -88,7 +91,7 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     defaultLocale: 'pt',
     lazy: true,
-    langDir: 'i18n/locales',
+    langDir: 'locales',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
@@ -118,7 +121,8 @@ export default defineNuxtConfig({
   },
 
   swiper: {
-    styleLang: 'scss',
+    // Swiper 12+ expõe apenas CSS; tema customizado em assets/scss/modules/vendors/_swiper.scss
+    styleLang: 'css',
   },
 
   runtimeConfig: {
